@@ -101,9 +101,6 @@
 		    	_this.callback(_this.curIndexArr, _this.curValue);
 		    });
 
-		    _this.trigger.addEventListener('click',function(){
-		    	_this.show();
-		    });
 		    _this.grayLayer.addEventListener('click',function(){
 				_this.hide();
 		    });
