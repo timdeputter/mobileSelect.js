@@ -34,6 +34,7 @@
 		init: function(config){
 			var _this = this;
 			_this.keyMap = config.keyMap ? config.keyMap : {id:'id', value:'value', childs:'childs'};
+			_this.extraClass = config.extraClass || '';
 			_this.checkDataType();
 			_this.renderWheels(_this.wheelsData, config.cancelBtnText, config.ensureBtnText);
 			_this.wheel = getClass(_this.mobileSelect,'wheel');
@@ -51,7 +52,6 @@
 			_this.initPosition = config.position || [];
 			_this.titleText = config.title || '';
 			_this.connector = config.connector || ' ';
-			_this.extraClass = config.extraClass || '';
 			_this.setStyle(config);
 			_this.setTitle(_this.titleText);
 			_this.checkIsPC();
