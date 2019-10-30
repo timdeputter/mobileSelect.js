@@ -51,6 +51,7 @@
 			_this.initPosition = config.position || [];
 			_this.titleText = config.title || '';
 			_this.connector = config.connector || ' ';
+			_this.extraClass = config.extraClass || '';
 			_this.setStyle(config);
 			_this.setTitle(_this.titleText);
 			_this.checkIsPC();
@@ -171,7 +172,7 @@
 			var cancelText = cancelBtnText ? cancelBtnText : '取消';
 			var ensureText = ensureBtnText ? ensureBtnText : '确认';
 			_this.mobileSelect = document.createElement("div");
-			_this.mobileSelect.className = "mobileSelect";
+			_this.mobileSelect.className = "mobileSelect" + _this.extraClass;
 			_this.mobileSelect.innerHTML =
 		    	'<div class="grayLayer"></div>'+
 		        '<div class="content">'+
