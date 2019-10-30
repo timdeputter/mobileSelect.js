@@ -172,7 +172,7 @@
 			var cancelText = cancelBtnText ? cancelBtnText : '取消';
 			var ensureText = ensureBtnText ? ensureBtnText : '确认';
 			_this.mobileSelect = document.createElement("div");
-			_this.mobileSelect.className = "mobileSelect" + _this.extraClass;
+			_this.mobileSelect.className = "mobileSelect" + " " + _this.extraClass;
 			_this.mobileSelect.innerHTML =
 		    	'<div class="grayLayer"></div>'+
 		        '<div class="content">'+
